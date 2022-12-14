@@ -11,10 +11,12 @@ pip install -r requirements.txt
 2. Demo
 <br>
 Sử dụng KNN
+
 ```shell
 python app_knn.py
 ```
 Sử dụng LBPH
+
 ```shell
 python app_lbph.py
 ```
