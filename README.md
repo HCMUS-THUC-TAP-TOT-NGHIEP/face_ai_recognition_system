@@ -7,6 +7,7 @@ Face Recognition Attandance System using python
 pip install -r requirements.txt
 ```
 <br>
+
 2. Demo
 <br>
 Sử dụng KNN
