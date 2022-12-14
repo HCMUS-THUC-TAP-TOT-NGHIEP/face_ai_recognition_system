@@ -138,7 +138,7 @@ def add():
         faces = extract_faces(frame)
         for (x,y,w,h) in faces:
             cv2.rectangle(frame,(x, y), (x+w, y+h), (255, 0, 20), 2)
-            cv2.putText(frame,f'Images Captured: {i}/50',(30,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255, 0, 20),2,cv2.LINE_AA)
+            cv2.putText(frame,f'Images Captured: {i}/100',(30,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255, 0, 20),2,cv2.LINE_AA)
             if j%10==0:
                 name = newusername+'_'+str(i)+'.jpg'
                 cv2.imwrite(userimagefolder+'/'+name,frame[y:y+h,x:x+w])
