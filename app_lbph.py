@@ -183,6 +183,7 @@ def add():
     harcascadePath = 'static/haarcascade_frontalface_default.xml'
     detector = cv2.CascadeClassifier(harcascadePath)
     sampleNum = 0
+    maxSample = 50
 
     while (True):
         ret, img = cam.read()
@@ -200,7 +201,7 @@ def add():
         if cv2.waitKey(100) & 0xFF == ord('q'):
             break
         # break if the sample number is more than 100
-        elif sampleNum > 99:
+        elif sampleNum >= maxSample:
             break
     cam.release()
     cv2.destroyAllWindows()
